@@ -12,14 +12,14 @@ class ViewController extends Controller
         return view('ets') ;
     }
 
-    function showGreetings() {
+    function periksaCovid() {
         //source untuk data / proses bisnis yg di olah
-        return view('showgreetings') ;
+        return view('periksacovid') ;
     }
 
-    function sayHi(Request $request) {
+    function hasilPeriksa(Request $request) {
         //source untuk data / proses bisnis yg di olah
-        return view('tugas') ;
+        return view('hasil') ;
     }
 
 }

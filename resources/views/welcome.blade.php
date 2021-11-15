@@ -93,7 +93,7 @@
                     <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="ets2021">ETS</a>
-                    <a href="greetings">Tugas PHP</a>
+                    <a href="periksa">Tugas PHP</a>
                 </div>
             </div>
         </div>
