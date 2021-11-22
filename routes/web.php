@@ -28,5 +28,10 @@ Route::get('ets2021',"ViewController@showETS") ;
 Route::get('periksa',"ViewController@periksaCovid") ;
 Route::post('hasil',"ViewController@hasilPeriksa") ;
 
+//route CRUD
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
+
 
 
