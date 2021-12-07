@@ -1,6 +1,6 @@
 @extends('layout.happy')
 @section('title', 'Data Absen')
-@section('judulhalaman', 'DATA ABSEN')
+@section('judulhalaman', 'TAMBAH DATA ABSEN')
 
 @section('konten')
     <a href="/absen"> Kembali</a>
@@ -10,10 +10,10 @@
 
     <form action="/absen/store" method="post">
         {{ csrf_field() }}
-        <div class="container">
+        <div class="container" id="ubah">
 
             <div class="row">
-                <div class='col-lg-9'>
+                <div class='col-lg-12'>
                     <div class="form-group">
                         <label for="nama" class="col-sm-2 control-label">Nama Pegawai :</label>
                         <div class='col-sm-4 input-group date' id='nama'>
@@ -29,7 +29,7 @@
 
 
             <div class="row">
-                <div class='col-lg-9'>
+                <div class='col-lg-12'>
                     <div class="form-group">
                         <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
                         <div class='col-sm-4 input-group date' id='dtpickerdemo'>
@@ -50,13 +50,24 @@
                     });
                 </script>
             </div>
+            <div class='col-lg-12'>
+                <div class="form-group">
+                    <b>Status :</b>
+                    <input type="radio" id="h" name="status" value="H">
+                    <label for="h">HADIR</label>
+                    <input type="radio" id="a" name="status" value="A" checked="checked">
+                    <label for="a">TIDAK HADIR</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class='col-lg-12'>
+                <input type="submit" class="btn btn-green" value="Simpan Data">
+            </div>
+
         </div>
-        Status
-        <input type="radio" id="h" name="status" value="H">
-        <label for="h">HADIR</label><br>
-        <input type="radio" id="a" name="status" value="A" checked="checked">
-        <label for="a">TIDAK HADIR</label><br>
-        <input type="submit" value="Simpan Data">
+
     </form>
 @endsection
 

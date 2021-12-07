@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CRUD Pendapatan</title>
-</head>
-<body>
-	<h3>Data Pendapatan</h3>
+@extends('layout.happy')
+@section('title', 'Data Pendapatan')
+@section('judulhalaman', 'DATA PENDAPATAN')
 
+@section('konten')
 	<a href="/pendapatan/tambah"> + Tambah Pendapatan Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="styled-table">
+        <thead>
 		<tr>
 			<th>ID Pegawai</th>
 			<th>Bulan</th>
@@ -20,6 +18,7 @@
             <th>Tunjangan</th>
             <th>Opsi</th>
 		</tr>
+    </thead>
 		@foreach($pendapatan as $p)
 		<tr>
 			<td>{{ $p->pendapatan_id_pegawai }}</td>
@@ -35,6 +34,7 @@
 		</tr>
 		@endforeach
 	</table>
+    @endsection
 
 
 </body>
