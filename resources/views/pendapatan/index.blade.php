@@ -21,15 +21,15 @@
     </thead>
 		@foreach($pendapatan as $p)
 		<tr>
-			<td>{{ $p->pendapatan_id_pegawai }}</td>
-			<td>{{ $p->pendapatan_bulan }}</td>
-			<td>{{ $p->pendapatan_tahun }}</td>
-			<td>{{ $p->pendapatan_gaji }}</td>
-            <td>{{ $p->pendapatan_tunjangan }}</td>
+			<td>{{ $p->IDPegawai }}</td>
+			<td>{{ $p->Bulan }}</td>
+			<td>{{ $p->Tahun }}</td>
+			<td>{{ $p->Gaji }}</td>
+            <td>{{ $p->Tunjangan }}</td>
 			<td>
-				<a href="/pendapatan/edit/{{ $p->pendapatan_id }}">Edit</a>
+				<a href="/pendapatan/edit/{{ $p->ID }}">Edit</a>
 				|
-				<a href="/pendapatan/hapus/{{ $p->pendapatan_id }}">Hapus</a>
+				<a href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

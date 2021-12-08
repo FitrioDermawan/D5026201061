@@ -29,11 +29,11 @@ class PendapatanController extends Controller
     {
         // insert data ke table pendapatan
         DB::table('pendapatan')->insert([
-            'pendapatan_id_pegawai' => $request->idpegawai,
-            'pendapatan_bulan' => $request->bulan,
-            'pendapatan_tahun' => $request->tahun,
-            'pendapatan_gaji' => $request->gaji,
-            'pendapatan_tunjangan' => $request->tunjangan
+            'IDpegawai' => $request->idpegawai,
+            'Bulan' => $request->bulan,
+            'Tahun' => $request->tahun,
+            'Gaji' => $request->gaji,
+            'Tunjangan' => $request->tunjangan
         ]);
         // alihkan halaman ke halaman pendapatan
         return redirect('/pendapatan');
@@ -43,7 +43,7 @@ class PendapatanController extends Controller
     public function edit($id)
     {
         // mengambil data pendapatan berdasarkan id yang dipilih
-        $pendapatan = DB::table('pendapatan')->where('pendapatan_id', $id)->get();
+        $pendapatan = DB::table('pendapatan')->where('ID', $id)->get();
         // passing data pendapatan yang didapat ke view edit.blade.php
         return view('pendapatan.edit', ['pendapatan' => $pendapatan]);
     }
@@ -52,12 +52,12 @@ class PendapatanController extends Controller
     public function update(Request $request)
     {
         // update data pendapatan
-        DB::table('pendapatan')->where('pendapatan_id', $request->id)->update([
-            'pendapatan_id_pegawai' => $request->idpegawai,
-            'pendapatan_bulan' => $request->bulan,
-            'pendapatan_tahun' => $request->tahun,
-            'pendapatan_gaji' => $request->gaji,
-            'pendapatan_tunjangan' => $request->tunjangan
+        DB::table('pendapatan')->where('ID', $request->id)->update([
+            'IDPegawai' => $request->idpegawai,
+            'Bulan' => $request->bulan,
+            'Tahun' => $request->tahun,
+            'Gaji' => $request->gaji,
+            'Tunjangan' => $request->tunjangan
         ]);
         // alihkan halaman ke halaman pendapatan
         return redirect('/pendapatan');
@@ -67,7 +67,7 @@ class PendapatanController extends Controller
     public function hapus($id)
     {
         // menghapus data pendapatan berdasarkan id yang dipilih
-        DB::table('pendapatan')->where('pendapatan_id', $id)->delete();
+        DB::table('pendapatan')->where('ID', $id)->delete();
 
         // alihkan halaman ke halaman pendapatan
         return redirect('/pendapatan');
