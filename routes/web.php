@@ -35,6 +35,9 @@ Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
+
 
 //tugas laravel CRUD pendapatan
 Route::get('/pendapatan','PendapatanController@index');
@@ -56,6 +59,17 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//tugas ikan
+Route::get('/ikan','IkanController@index');
+Route::get('/ikan/tambah','IkanController@tambah');
+Route::post('/ikan/store','IkanController@store');
+Route::get('/ikan/edit/{id}','IkanController@edit');
+Route::post('/ikan/update','IkanController@update');
+Route::get('/ikan/hapus/{id}','IkanController@hapus');
+Route::get('/ikan/cari','IkanController@cari');
+Route::get('/ikan/detail/{id}','IkanController@view');
+
 
 
 

@@ -142,6 +142,8 @@
             background-color: white;
             border-radius: 2;
 
+        }
+
     </style>
 </head>
 

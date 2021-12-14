@@ -11,7 +11,8 @@
 	<table class="styled-table">
         <thead>
 		<tr>
-			<th>ID Pegawai</th>
+            <th>No</th>
+			<th>Nama Pegawai</th>
 			<th>Bulan</th>
 			<th>Tahun</th>
 			<th>Gaji</th>
@@ -19,17 +20,18 @@
             <th>Opsi</th>
 		</tr>
     </thead>
-		@foreach($pendapatan as $p)
+		@foreach($pendapatan as $c)
 		<tr>
-			<td>{{ $p->IDPegawai }}</td>
-			<td>{{ $p->Bulan }}</td>
-			<td>{{ $p->Tahun }}</td>
-			<td>{{ $p->Gaji }}</td>
-            <td>{{ $p->Tunjangan }}</td>
+            <td>{{ $loop->iteration }}</td>
+			<td>{{ $c->pegawai_nama }}</td>
+			<td>{{ $c->Bulan }}</td>
+			<td>{{ $c->Tahun }}</td>
+			<td>{{ $c->Gaji }}</td>
+            <td>{{ $c->Tunjangan }}</td>
 			<td>
-				<a href="/pendapatan/edit/{{ $p->ID }}">Edit</a>
+				<a href="/pendapatan/edit/{{ $c->ID }}">Edit</a>
 				|
-				<a href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a>
+				<a href="/pendapatan/hapus/{{ $c->ID }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
