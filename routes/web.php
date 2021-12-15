@@ -70,6 +70,12 @@ Route::get('/ikan/hapus/{id}','IkanController@hapus');
 Route::get('/ikan/cari','IkanController@cari');
 Route::get('/ikan/detail/{id}','IkanController@view');
 
+//UAS
+//route CRUD
+Route::get('/nilai','NilaiController@index');
+Route::get('/nilai/tambah','NilaiController@tambah');
+Route::post('/nilai/store','NilaiController@store');
+
 
 
 

@@ -44,7 +44,7 @@
                             <div class="col-sm-1"> : </div>
                             <div class="col-sm-2">
                                 <input type="radio" id="y" name="tersedia" value="Y" @if ($i->tersedia === 'Y') checked="checked" @endif>
-                                <label for="y">HADIR</label>
+                                <label for="y">Ya</label>
                             </div>
                             <div class="col-sm-2">
                                 <input type="radio" id="t" name="tersedia" value="T" @if ($i->tersedia === 'T') checked="checked" @endif>

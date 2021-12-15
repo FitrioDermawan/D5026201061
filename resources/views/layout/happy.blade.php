@@ -170,6 +170,7 @@
                     <li><a href="/absen"><i class="fas fa-calendar-week"></i> Absen</a></li>
                     <li><a href="/pendapatan"><i class="fas fa-tasks"></i> Pendapatan</a></li>
                     <li><a href="/ikan">Praktikum</a></li>
+                    <li><a href="/nilai">UAS</a></li>
                 </ul>
             </div>
             <div class="col-sm-10">
