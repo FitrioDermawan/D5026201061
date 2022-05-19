@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Fitrio Dermawan</title>
+        <title>Eatwell</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,19 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    5026201061 <br>
-                    Fitrio Dermawan
+                    RBPL - Kelompok 1<br>
+                    EatWell
                 </div>
 
                 <div class="links">
-                    <a href="profilmhs.html">Tugas 1</a>
-                    <a href="bootstrapmodal.html">Tugas 2</a>
-                    <a href="periksacovid.html">Tugas 3</a>
-                    <a href="praktikumbukalapakpak.html">Praktikum 1</a>
-                    <a href="tugas4">Tugas 4</a>
-                    <a href="praktikum2">Praktikum 2</a>
-                    <a href="ets2021">ETS</a>
-                    <a href="periksa">Tugas PHP</a>
+                    <a href="/eatwell/home">EatWell</a>
                 </div>
             </div>
         </div>
